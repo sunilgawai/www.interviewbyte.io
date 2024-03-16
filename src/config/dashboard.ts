@@ -19,12 +19,12 @@ export const dashboardConfig: DashboardConfig = {
       icon: "dashboard",
     },
     {
-      title: "APIs",
-      href: "/dashboard/users",
+      title: "Interviews",
+      href: "/dashboard/interviews",
       icon: "apis",
     },
     {
-      title: "Users",
+      title: "Candidates",
       href: "/dashboard/users",
       icon: "users",
     },

@@ -46,15 +46,16 @@ enum Role {
 }
 
 model User {
-    id            String    @id @default(cuid())
+    id            String         @id @default(cuid())
     name          String?
-    email         String?   @unique
+    email         String?        @unique
     username      String?
     emailVerified DateTime?
     image         String?
-    role          Role      @default(candidate)
+    role          Role           @default(candidate)
     accounts      Account[]
     sessions      Session[]
+    organisations Organisation[]
 }
 
 model VerificationToken {
@@ -73,4 +74,12 @@ model Interview {
     duration      Int
     location      String
     status        String
+}
+
+model Organisation {
+    id      String @id @default(cuid())
+    name    String
+    address String
+    bio     String
+    users    User[]
 }

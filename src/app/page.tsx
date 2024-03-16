@@ -23,7 +23,7 @@ const Home = () => {
             <span className="underline underline-offset-4">MIBS.</span>
           </p>
           <div className="space-x-4">
-            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
+            <Link href="/register" className={cn(buttonVariants({ size: "lg" }))}>
               Get Started
             </Link>
             <Link

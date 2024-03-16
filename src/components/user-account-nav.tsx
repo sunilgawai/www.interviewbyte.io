@@ -42,11 +42,11 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
 					<Link href="/profile">Profile</Link>
 				</DropdownMenuItem>
 				<DropdownMenuItem asChild>
-					<Link href="/chat">Chat</Link>
+					<Link href="/invitation">Invitation</Link>
 				</DropdownMenuItem>
 
 				<DropdownMenuItem asChild>
-					<Link href="/billing">Billing</Link>
+					<Link href="/schedules">Schedules</Link>
 				</DropdownMenuItem>
 
 				<DropdownMenuItem asChild>
