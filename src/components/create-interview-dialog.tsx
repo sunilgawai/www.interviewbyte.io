@@ -9,14 +9,17 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Notebook, UsersIcon, VideoIcon } from "lucide-react";
+import { Notebook, PlusIcon, UsersIcon, VideoIcon } from "lucide-react";
 import Link from "next/link";
 
 export function CreateInterviewDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>Create Interview</Button>
+        <Button className="flex items-center space-x-2">
+          <PlusIcon className="h-4 w-4" />
+          <span>Create Interview</span>
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
