@@ -20,7 +20,7 @@ export function EmailOptionsDropdown() {
         <DropdownMenuItem asChild>
           <Link
             className="py-2 px-4 font-medium text-base"
-            href="/agency/mass-email"
+            href="/agency/email-service/mass-email"
           >
             Mass Email
           </Link>
@@ -28,7 +28,7 @@ export function EmailOptionsDropdown() {
         <DropdownMenuItem asChild>
           <Link
             className="py-2 px-4 font-medium text-base"
-            href="/agency/mass-sms-applications"
+            href="/agency/email-service/mass-sms-applications"
           >
             Mass SMS Applications
           </Link>
@@ -37,7 +37,7 @@ export function EmailOptionsDropdown() {
         <DropdownMenuItem asChild>
           <Link
             className="py-2 px-4 font-medium text-base"
-            href="/agency/mass-updates"
+            href="/agency/email-service/mass-updates"
           >
             Mass Updates
           </Link>
@@ -46,7 +46,7 @@ export function EmailOptionsDropdown() {
         <DropdownMenuItem asChild>
           <Link
             className="py-2 px-4 font-medium text-base"
-            href="/agency/schdeule-mass-emails"
+            href="/agency/email-service/schedule-mass-emails"
           >
             Schedule Mass Emails
           </Link>
