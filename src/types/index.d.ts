@@ -45,6 +45,7 @@ export type DocsConfig = {
 
 export type MarketingConfig = {
   mainNav: MainNavItem[]
+  agencyNav: MainNavItem[]
 }
 
 export type DashboardConfig = {

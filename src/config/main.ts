@@ -23,4 +23,31 @@ export const mainConfig: MarketingConfig = {
 			href: "/dashboard",
 		},
 	],
+    agencyNav: [
+        {
+			title: "Home",
+			href: "#about",
+		},
+        {
+			title: "Job Openings",
+			href: "#about",
+		},
+        {
+			title: "Candidates",
+			href: "#about",
+		},
+        {
+			title: "Inteviews",
+			href: "#about",
+		},
+        {
+			title: "Clients",
+			href: "#about",
+		},
+        {
+			title: "Contacts",
+			href: "#about",
+		},
+
+    ]
 };
