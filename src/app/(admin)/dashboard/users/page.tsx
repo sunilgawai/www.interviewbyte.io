@@ -44,8 +44,8 @@ const users: {
 ];
 
 const UsersPage = async () => {
-    const response = await AdminService.getRegisteredUsers();
-    console.log(response);
+    // const response = await AdminService.getRegisteredUsers();
+    // console.log(response);
     
 	return (
 		<DashboardShell>
@@ -56,8 +56,8 @@ const UsersPage = async () => {
 				<Button>Create User</Button>
 			</DashboardHeader>
 
-			{response.result.length ? (
-				<UsersTable columns={UsersColumns} data={response.result} />
+			{users.length ? (
+				<UsersTable columns={UsersColumns} data={users} />
 			) : (
 				<EmptyPlaceholder>
 					<EmptyPlaceholder.Icon name="post" />

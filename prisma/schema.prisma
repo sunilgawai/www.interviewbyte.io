@@ -40,6 +40,11 @@ model Session {
     user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
+enum Role {
+    interviewer
+    candidate
+}
+
 model User {
     id            String    @id @default(cuid())
     name          String?
@@ -47,6 +52,7 @@ model User {
     username      String?
     emailVerified DateTime?
     image         String?
+    role          Role      @default(candidate)
     accounts      Account[]
     sessions      Session[]
 }
@@ -57,4 +63,14 @@ model VerificationToken {
     expires    DateTime
 
     @@unique([identifier, token])
+}
+
+model Interview {
+    id            String   @id @default(cuid())
+    candidateId   String
+    interviewerId String
+    date_time     DateTime
+    duration      Int
+    location      String
+    status        String
 }

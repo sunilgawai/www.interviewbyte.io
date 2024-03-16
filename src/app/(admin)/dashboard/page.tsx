@@ -13,8 +13,8 @@ export const metadata = {
 export default async function DashboardPage() {
 	return (
 		<DashboardShell>
-			<DashboardHeader heading="Statistics" text="View and manage Application.">
-				<Button>Create</Button>
+			<DashboardHeader heading="Statistics" text="View and manage interviews.">
+				<Button>Schedule a new Interview</Button>
 			</DashboardHeader>
 			<div>
 				<EmptyPlaceholder>
