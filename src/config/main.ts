@@ -37,6 +37,10 @@ export const mainConfig: MarketingConfig = {
       href: "/agency/candidates",
     },
     {
+        title: "Tests",
+        href: "/agency/tests",
+      },
+    {
       title: "Inteviews",
       href: "/agency/interviews",
     },
