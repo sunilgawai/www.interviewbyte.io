@@ -18,8 +18,8 @@ const fontHeading = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Spiritual Guide AI",
-	description: "Developed by Sunil G. Gawai",
+	title: "Interview Byte",
+	description: "Developed by Sunil G. Gawai and team",
 };
 
 export default function RootLayout({
