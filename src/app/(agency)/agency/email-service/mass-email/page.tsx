@@ -57,7 +57,7 @@ const Page = () => {
                 <EmailTemplateSelector />
                 <Link
                   className={cn(buttonVariants())}
-                  href="/agency/email-template"
+                  href="/agency/templates"
                 >
                   Create Template
                 </Link>

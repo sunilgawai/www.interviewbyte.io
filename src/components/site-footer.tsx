@@ -14,12 +14,12 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
 					<p className="text-center text-sm leading-loose md:text-left">
 						Built by{" "}
 						<a
-							href={siteConfig.links.twitter}
+							href={'https://github.com/sunilgawai/www.interviewbyte.io.git'}
 							target="_blank"
 							rel="noreferrer"
 							className="font-medium underline underline-offset-4"
 						>
-							Sunil G. Gawai
+							Sunil G. Gawai and Team
 						</a>
 					</p>
 				</div>

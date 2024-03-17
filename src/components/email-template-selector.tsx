@@ -21,23 +21,23 @@ import {
 const frameworks = [
   {
     value: "next.js",
-    label: "Next.js",
+    label: "New Invitation",
   },
   {
     value: "sveltekit",
-    label: "SvelteKit",
+    label: "Greeting",
   },
   {
     value: "nuxt.js",
-    label: "Nuxt.js",
+    label: "Welcome",
   },
   {
     value: "remix",
-    label: "Remix",
+    label: "Hired",
   },
   {
     value: "astro",
-    label: "Astro",
+    label: "Rejected",
   },
 ];
 
@@ -62,7 +62,7 @@ export function EmailTemplateSelector() {
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." className="h-9" />
+          <CommandInput placeholder="Search template..." className="h-9" />
           <CommandEmpty>No Template found.</CommandEmpty>
           <CommandGroup>
             {frameworks.map((framework) => (
