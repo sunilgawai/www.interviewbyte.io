@@ -10,8 +10,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 
-const Home = () => {
+const Home = async () => {
+  const session = await getServerSession(authOptions);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
@@ -32,12 +35,21 @@ const Home = () => {
             <span className="underline underline-offset-4">MIBS.</span>
           </p>
           <div className="space-x-4">
-            <Link
-              href="/register"
-              className={cn(buttonVariants({ size: "lg" }))}
-            >
-              Get Started
-            </Link>
+            {session ? (
+              <Link
+                href="/agency/interviews"
+                className={cn(buttonVariants({ size: "lg" }))}
+              >
+                Get Started
+              </Link>
+            ) : (
+              <Link
+                href="/register"
+                className={cn(buttonVariants({ size: "lg" }))}
+              >
+                Get Started
+              </Link>
+            )}
             <Link
               href={"https://github.com/sunilgawai/www.interviewbyte.io"}
               target="_blank"
