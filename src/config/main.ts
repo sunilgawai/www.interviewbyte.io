@@ -24,17 +24,17 @@ export const mainConfig: MarketingConfig = {
     },
   ],
   agencyNav: [
-    {
-      title: "Job Openings",
-      href: "/agency/jobs",
-    },
+    // {
+    //   title: "Job Openings",
+    //   href: "/agency/jobs",
+    // },
     {
       title: "Candidates",
       href: "/agency/candidates",
     },
     {
-      title: "Tests",
-      href: "/agency/tests",
+      title: "Templates",
+      href: "/agency/templates",
     },
     {
       title: "Inteviews",
@@ -44,10 +44,10 @@ export const mainConfig: MarketingConfig = {
       title: "Organisation",
       href: "/agency/clients",
     },
-    {
-      title: "Contacts",
-      href: "/agency/contacts",
-    },
+    // {
+    //   title: "Contacts",
+    //   href: "/agency/contacts",
+    // },
     {
       title: "Settings",
       href: "/agency/settings",

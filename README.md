@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Interview Management System
+
+## Overview
+
+The Interview Management System is a comprehensive platform designed to streamline the hiring process by automating interview scheduling, facilitating efficient interviews, enhancing collaboration among hiring teams, and improving the candidate experience. Whether you're a recruiter, interviewer, or candidate, our platform offers intuitive features tailored to your needs.
+
+## Features
+
+### Dashboard
+- Central hub for recruiters to manage interviews, view candidate profiles, and collaborate with hiring teams.
+- Provides an overview of upcoming interviews, interview statuses, and pending actions.
+- Access candidate profiles with essential information such as resume, contact details, and interview history.
+- Collaboration tools include chat or messaging features for seamless communication among team members.
+
+### Scheduling Page
+- Streamlined interface for recruiters and candidates to schedule interviews based on mutual availability.
+- Integration with calendars to display availability of interviewers and candidates.
+- Automated scheduling options suggest available time slots and send invitations to participants.
+- Confirmation prompts and automated reminders ensure smooth coordination of scheduled interviews.
+
+### Video Interview Room
+- High-quality video conferencing platform with integrated features such as screen sharing, whiteboarding, and breakout rooms.
+- Seamless integration with video conferencing APIs for hosting virtual interviews.
+- Option to share screens for technical discussions or presentations.
+- Collaborative whiteboarding tools for discussing technical problems or design challenges.
+- Ability to create separate discussion rooms for group interviews or multiple interviewers.
+
+### Candidate Portal
+- Dedicated space for candidates to manage their interview schedule, access interview details and resources, and submit post-interview feedback.
+- Overview of scheduled interviews with details such as date, time, and interviewers.
+- Access to interview preparation materials, instructions, and FAQs.
+- Feedback submission form for candidates to provide feedback after interviews.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Interview Management System, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/sunilgawai/www.interviewbyte.io.git`
+2. Install dependencies: `npm install`
+3. Set up the database and environment variables as per the provided instructions.
+4. Start the server: `npm start`
+5. Access the application through the provided URL and begin using the features.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next JS
+- MySQL
+- Prisma
+- Tailwind CSS
+- WebRTC (for video conferencing)
+- Calendar API (for scheduling)
+- Other relevant technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributors
 
-## Learn More
+- [Sunil G. Gawai](https://github.com/yourusername)
+- [Contributor 1](https://github.com/contributor1)
+- [Contributor 2](https://github.com/contributor2)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
