@@ -1,4 +1,6 @@
 import { CreateInterviewDialog } from "@/components/create-interview-dialog";
+import { InterviewsColumns } from "@/components/tables/interviews-column";
+import InterviewsTable from "@/components/tables/interviews-table";
 import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
 import React from "react";
@@ -27,12 +29,14 @@ const InterviewsPage = () => {
           <h2 className="text-xl font-semibold">Start Scheduling interviews</h2>
           <div className="mt-4 flex items-center justify-between border-t pt-4">
             <p className="text-sm text-gray-500">
-              No interview has been scheduled.
+              below is a list of scheduled interviews
             </p>
             <CreateInterviewDialog />
           </div>
         </div>
       </div>
+
+      <InterviewsTable columns={InterviewsColumns} data={[]} />
     </div>
   );
 };
