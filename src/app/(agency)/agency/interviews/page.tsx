@@ -26,11 +26,10 @@ const InterviewsPage = () => {
           </p>
         </div>
         <div className="mt-8">
-          <h2 className="text-xl font-semibold">Start Scheduling interviews</h2>
-          <div className="mt-4 flex items-center justify-between border-t pt-4">
-            <p className="text-sm text-gray-500">
-              below is a list of scheduled interviews
-            </p>
+          <div className="mt-4 flex items-center justify-between border-b pb-4">
+            <h2 className="text-xl font-semibold">
+              Start Scheduling interviews
+            </h2>
             <CreateInterviewDialog />
           </div>
         </div>

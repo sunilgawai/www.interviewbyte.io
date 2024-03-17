@@ -33,9 +33,9 @@ export const mainConfig: MarketingConfig = {
       href: "/agency/candidates",
     },
     {
-        title: "Tests",
-        href: "/agency/tests",
-      },
+      title: "Tests",
+      href: "/agency/tests",
+    },
     {
       title: "Inteviews",
       href: "/agency/interviews",
@@ -47,6 +47,10 @@ export const mainConfig: MarketingConfig = {
     {
       title: "Contacts",
       href: "/agency/contacts",
+    },
+    {
+      title: "Settings",
+      href: "/agency/settings",
     },
   ],
 };
