@@ -1,6 +1,15 @@
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { StarIcon } from "lucide-react";
+import { Avatar } from "@/components/ui/avatar";
+import { Icons } from "@/components/icons";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Home = () => {
   return (
@@ -23,7 +32,10 @@ const Home = () => {
             <span className="underline underline-offset-4">MIBS.</span>
           </p>
           <div className="space-x-4">
-            <Link href="/register" className={cn(buttonVariants({ size: "lg" }))}>
+            <Link
+              href="/register"
+              className={cn(buttonVariants({ size: "lg" }))}
+            >
               Get Started
             </Link>
             <Link
@@ -60,7 +72,7 @@ const Home = () => {
               <div className="space-y-2">
                 <h3 className="font-bold">Next.js 13</h3>
                 <p className="text-sm text-muted-foreground">
-                  App dir, Routing, Layouts, Loading UI and API routes.
+                  Built on Next js, providing faster speed.
                 </p>
               </div>
             </div>
@@ -86,7 +98,7 @@ const Home = () => {
               <div className="space-y-2">
                 <h3 className="font-bold">Database</h3>
                 <p className="text-sm text-muted-foreground">
-                  ORM using Prisma and deployed on PlanetScale.
+                  Using prisma for better database query handling.
                 </p>
               </div>
             </div>
@@ -97,7 +109,7 @@ const Home = () => {
                 <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
               </svg>
               <div className="space-y-2">
-                <h3 className="font-bold">Components</h3>
+                <h3 className="font-bold">UI</h3>
                 <p className="text-sm text-muted-foreground">
                   UI components built using Radix UI and styled with Tailwind
                   CSS.
@@ -119,7 +131,7 @@ const Home = () => {
               <div className="space-y-2">
                 <h3 className="font-bold">Authentication</h3>
                 <p className="text-sm text-muted-foreground">
-                  Authentication using NextAuth.js and middlewares.
+                  Email and Google authentication supported.
                 </p>
               </div>
             </div>
@@ -151,68 +163,8 @@ const Home = () => {
             How It Works?
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy is open source and powered by open source software. <br />{" "}
-            The code is available on{" "}
-            <Link
-              href={""}
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-4"
-            >
-              GitHub
-            </Link>
-            .{" "}
-          </p>
-        </div>
-      </section>
-      <section id="open-source" className="container py-8 md:py-12 lg:py-24">
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Testimonials
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy is open source and powered by open source software. <br />{" "}
-            The code is available on{" "}
-            <Link
-              href={""}
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-4"
-            >
-              GitHub
-            </Link>
-            .{" "}
-          </p>
-        </div>
-      </section>
-      <section id="open-source" className="container py-8 md:py-12 lg:py-24">
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Pricing
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy is open source and powered by open source software. <br />{" "}
-            The code is available on{" "}
-            <Link
-              href={""}
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-4"
-            >
-              GitHub
-            </Link>
-            .{" "}
-          </p>
-        </div>
-      </section>
-      <section id="open-source" className="container py-8 md:py-12 lg:py-24">
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            FAQs
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            Taxonomy is open source and powered by open source software. <br />{" "}
-            The code is available on{" "}
+            Interview Byte is online interview Scheduling and planner tool.{" "}
+            <br /> The code is available on{" "}
             <Link
               href={"https://github.com/sunilgawai/www.interviewbyte.io"}
               target="_blank"
@@ -223,6 +175,267 @@ const Home = () => {
             </Link>
             .{" "}
           </p>
+        </div>
+      </section>
+      <section className="w-full py-12">
+        <div className="container grid items-center gap-8 px-4 text-center lg:gap-12 lg:px-6">
+          <div>
+            <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+              Customer Testimonials
+            </h2>
+            <p className="max-w-[85%] mt-4 leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+              Check out what our customers have to say about us.
+            </p>
+          </div>
+          <div className="grid max-w-sm gap-4 mx-auto sm:max-w-none sm:grid-cols-2 lg:gap-6">
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center space-x-2">
+                <Avatar className="w-8 h-8">
+                  <img
+                    alt="Customer avatar"
+                    className="rounded-full"
+                    height="40"
+                    src="/user-placeholder.jpeg"
+                    style={{
+                      aspectRatio: "40/40",
+                      objectFit: "cover",
+                    }}
+                    width="40"
+                  />
+                </Avatar>
+                <span className="text-sm font-semibold">Alice Johnson</span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                "Absolutely love the product! It has made my life so much
+                easier."
+              </p>
+              <div className="flex items-center space-x-1">
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 fill-current opacity-30 text-amber-500" />
+              </div>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center space-x-2">
+                <Avatar className="w-8 h-8">
+                  <img
+                    alt="Customer avatar"
+                    className="rounded-full"
+                    height="40"
+                    src="/user-placeholder.jpeg"
+                    style={{
+                      aspectRatio: "40/40",
+                      objectFit: "cover",
+                    }}
+                    width="40"
+                  />
+                </Avatar>
+                <span className="text-sm font-semibold">Mark Thompson</span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                "The customer service is top-notch. I highly recommend this
+                company!"
+              </p>
+              <div className="flex items-center space-x-1">
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 fill-current opacity-30 text-amber-500" />
+                <StarIcon className="w-4 h-4 fill-current opacity-30 text-amber-500" />
+              </div>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center space-x-2">
+                <Avatar className="w-8 h-8">
+                  <img
+                    alt="Customer avatar"
+                    className="rounded-full"
+                    height="40"
+                    src="/user-placeholder.jpeg"
+                    style={{
+                      aspectRatio: "40/40",
+                      objectFit: "cover",
+                    }}
+                    width="40"
+                  />
+                </Avatar>
+                <span className="text-sm font-semibold">Sophia Walker</span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                "The product is fantastic and exceeded my expectations. 10/10!"
+              </p>
+              <div className="flex items-center space-x-1">
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+              </div>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center space-x-2">
+                <Avatar className="w-8 h-8">
+                  <img
+                    alt="Customer avatar"
+                    className="rounded-full"
+                    height="40"
+                    src="/user-placeholder.jpeg"
+                    style={{
+                      aspectRatio: "40/40",
+                      objectFit: "cover",
+                    }}
+                    width="40"
+                  />
+                </Avatar>
+                <span className="text-sm font-semibold">Noah Parker</span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                "The product is amazing, and it arrived earlier than expected.
+                Great job!"
+              </p>
+              <div className="flex items-center space-x-1">
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 text-amber-500" />
+                <StarIcon className="w-4 h-4 fill-current opacity-30 text-amber-500" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            Simple, transparent pricing
+          </h2>
+        </div>
+
+        <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
+          <div className="grid gap-6">
+            <h3 className="text-xl font-bold sm:text-2xl">
+              What&apos;s included in the BASE plan
+            </h3>
+            <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Unlimited Posts
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Unlimited Users
+              </li>
+
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Custom domain
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Dashboard Analytics
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Access to Discord
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Premium Support
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 text-center">
+            <div>
+              <h4 className="text-7xl font-bold">$9</h4>
+              <p className="text-sm font-medium text-muted-foreground">
+                Billed Monthly
+              </p>
+            </div>
+            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
+              Get Started
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
+          <div className="grid gap-6">
+            <h3 className="text-xl font-bold sm:text-2xl">
+              What&apos;s included in the PRO plan
+            </h3>
+            <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Unlimited Posts
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Unlimited Users
+              </li>
+
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Custom domain
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Dashboard Analytics
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Access to Discord
+              </li>
+              <li className="flex items-center">
+                <Icons.check className="mr-2 h-4 w-4" /> Premium Support
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 text-center">
+            <div>
+              <h4 className="text-7xl font-bold">$19</h4>
+              <p className="text-sm font-medium text-muted-foreground">
+                Billed Monthly
+              </p>
+            </div>
+            <Link href="/signin" className={cn(buttonVariants({ size: "lg" }))}>
+              Get Started
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section id="open-source" className="container py-8 md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            FAQs
+          </h2>
+          <Accordion className="w-full " type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Is interviewbyte free?
+                </p>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Yes! It also contains some paid plans
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Can I use it as a meeting tool?
+                </p>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Yes. Anyone can register here and have interviews here.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Is it safe?
+                </p>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                  Yes. We have taken all preventions to keep your data secure.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
     </main>
