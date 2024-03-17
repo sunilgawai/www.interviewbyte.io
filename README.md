@@ -53,9 +53,10 @@ To get started with the Interview Management System, follow these steps:
 
 ## Contributors
 
-- [Sunil G. Gawai](https://github.com/yourusername)
-- [Contributor 1](https://github.com/contributor1)
-- [Contributor 2](https://github.com/contributor2)
+- [Sunil G. Gawai](https://github.com/sunilgawai)
+- [Bhushan Bhosale](https://github.com/sunilgawai)
+- [Shubham Chavan](https://github.com/sunilgawai)
+- [Ravindrea Kurhade](https://github.com/sunilgawai)
 
 ## License
 
