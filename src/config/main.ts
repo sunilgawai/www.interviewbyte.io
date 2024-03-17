@@ -25,10 +25,6 @@ export const mainConfig: MarketingConfig = {
   ],
   agencyNav: [
     {
-      title: "Home",
-      href: "#about",
-    },
-    {
       title: "Job Openings",
       href: "/agency/jobs",
     },
@@ -45,7 +41,7 @@ export const mainConfig: MarketingConfig = {
       href: "/agency/interviews",
     },
     {
-      title: "Clients",
+      title: "Organisation",
       href: "/agency/clients",
     },
     {

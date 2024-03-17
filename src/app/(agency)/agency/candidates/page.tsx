@@ -1,4 +1,6 @@
 import { EmailOptionsDropdown } from "@/components/email-options-dropdown";
+import { CandidatesColumns } from "@/components/tables/candidates-column";
+import CandidatesTable from "@/components/tables/candidates-table";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -21,6 +23,8 @@ const CandidatesPage = () => {
         Track Candidates who have applied or registered their details for future
         applications
       </p>
+
+      <CandidatesTable columns={CandidatesColumns} data={[]} />
     </div>
   );
 };
